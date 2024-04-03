@@ -1,0 +1,134 @@
+#areadm{
+	margin-top: 4%;
+	margin-bottom: 3%;
+}
+
+fieldset{
+	margin-left: 20%;
+	margin-right: 20%;
+	border: 0;
+	font-family: Roboto;
+	font-size: 22px;
+}
+
+.dados{
+	margin-bottom: 15px;
+	
+}
+
+.dados label{
+	margin-bottom: 5px;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.dados #email{
+	margin-bottom: 5%;
+}
+
+.dados input[type="text"],
+.dados input[type="email"],
+.dados select,
+.dados textarea{
+	width: 225px;
+}
+
+.dados textarea{
+	height: 100px;
+}
+
+/*outline- Retirar a formatção padrão do navegador*/
+.dados input:focus, .dados select:focus, .dados textarea:focus{
+	border: #000D7F 2px solid;
+	outline: none;
+}
+
+.dados input:hover, .dados select:hover, .dados textarea:hover{
+	border: #000D7F 2px solid;
+}
+
+/*text-shadow - Sombreamento no texto*/
+.botao{
+	margin-top: 1%;
+	width: 225px;
+	margin-bottom: 10px;
+	padding: 5px 7px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: #007A76;
+	color: white;
+}
+
+.botao:hover{
+	background-color: #34ABE3;
+}
+
+.botao, select{
+	cursor: pointer;
+}
+
+#pcenter{
+	margin-top: 3%;
+	margin-bottom: 2%;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 19px;
+	color: #009898;
+	letter-spacing: 1.5px;
+}
+
+/*Página cadastro*/
+#cad{
+	padding-top: 5%;
+	padding-bottom: 3%;
+}
+
+h1{
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-bottom: 5%;
+	font-size: 40px;
+	color: #6E6A60;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 2px black;
+}
+
+@media screen and (max-width: 1600px){
+	fieldset{
+		margin-left: 22%;
+		margin-right: 15%;
+	}
+	h1{
+		margin-left: 16%;
+		margin-right: 14%;
+	}
+}
+
+@media screen and (max-width: 1450px){
+	fieldset{
+		margin-left: 10%;
+		margin-right: 8%;
+	}
+	
+	h1{
+		margin-left: 10%;
+		margin-right: 4%;
+	}
+	
+	#cad{
+		margin-top: 12%;
+		margin-bottom: 15%;
+	}
+}
+
+@media screen and (max-width: 505px){
+	fieldset{
+		margin-left: 12%;
+		margin-right: 12%;
+	}
+	h1{
+		margin-left: 4%;
+		margin-bottom: 10%;
+	}
+}

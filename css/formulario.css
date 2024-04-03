@@ -1,0 +1,144 @@
+fieldset{
+	margin-bottom: 1%;
+	border: 0;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 18px;
+}
+
+.dados{
+	margin-bottom: 15px;
+	
+}
+
+.dados label{
+	display: block;
+	margin-bottom: 5px;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.dados input[type="text"],
+.dados input[type="email"],
+.dados select,
+.dados textarea{
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 3px;
+	box-shadow: 10px 10px 8px #888888;
+}
+
+.dados input[type="text"],
+.dados input[type="email"],
+.dados select,
+.dados textarea{
+	width: 225px;
+}
+
+.dados textarea{
+	height: 100px;
+}
+
+/*outline- Retirar a formatção padrão do navegador*/
+.dados input:focus, .dados select:focus, .dados textarea:focus{
+	border: #000D7F 2px solid;
+	outline: none;
+}
+
+.dados input:hover, .dados select:hover, .dados textarea:hover{
+	border: #000D7F 2px solid;
+}
+
+/*text-shadow - Sombreamento no texto*/
+.botao{
+	margin-top: 1%;
+	width: 225px;
+	margin-bottom: 10px;
+	padding: 5px 7px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: #007A76;
+	color: white;
+}
+
+.botao:hover{
+	background-color: #34ABE3;
+}
+
+.botao, select{
+	cursor: pointer;
+}
+
+#pcenter{
+	margin-top: 3%;
+	margin-bottom: 2%;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 19px;
+	color: #009898;
+	letter-spacing: 1.5px;
+}
+
+/*Página cadastro*/
+#cad{
+	padding-top: 5%;
+	padding-bottom: 3%;
+}
+
+h1{
+	margin-bottom: 3%;
+	color: #AE5700;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 2px black;
+}
+
+@media screen and (max-width: 1450px){
+	fieldset{
+		margin-top: 3%;
+	}
+}
+
+@media screen and (max-width: 1350px){
+	form{
+		margin-top: 17%;
+		margin-bottom: 17%;
+	}
+	
+	fieldset{
+		margin-top: 3%;
+		margin-bottom: 3%;
+	}
+	
+	#pcenter{
+		margin-top: 5%;
+		margin-bottom: 4%;
+	}
+	
+	h1{
+		margin-bottom: 4%;
+	}
+}
+
+@media screen and (max-width: 505px){
+	/*Página contati*/
+	#pcenter{
+		margin-top: 8%;
+		margin-bottom: 5%;
+	}
+	
+	/*Página cadastro*/
+	#cad{
+		padding-top: 28%;
+		padding-bottom: 26%;
+	}
+
+	h1{
+		margin-bottom: 7%;
+	}
+	
+	.botao{
+		margin-top: 4%;
+	}
+
+}

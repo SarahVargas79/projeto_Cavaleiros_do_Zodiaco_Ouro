@@ -1,0 +1,165 @@
+#video iframe{
+	width: 850px;
+	height: 495px;
+	margin-left: -3%;
+	border-radius: 25px;
+}
+
+.gifs{ 
+	display: flex;
+	justify-content: center;
+	margin-bottom: 5%;
+}
+
+.gifs2{ 
+	display: flex;
+	justify-content: center;
+	margin-top: 5%;
+}
+
+.gifs img{
+	width: 240px;
+	height: 135px; 
+}
+
+.gifs2 img{
+	width: 240px;
+	height: 135px; 
+}
+
+
+.gif{
+	margin-left: 15px;
+}
+
+#jcontainer{
+    display: flex;
+	justify-content: center;
+	margin-top: 6%;
+	margin-bottom: 5%;
+}
+
+#gifCDZ img{
+	width: 440px;
+	height: 410px;
+	margin-top: 12%;
+	margin-left: -16%;
+}
+
+#caixa{
+	margin-top: 8%;
+	margin-left: 6%;
+}
+
+/*animation: float 3s ease-in-out infinite - Propriedade animação: cria efeitos e animações | float 3s: flutua a cada 3segundos | ease-in-out: Determina um início e fim lentos | infinite: loop infinito*/ 
+#caixa img{
+	width: 280px;
+	height: 280px; 
+	animation: float 3s ease-in-out infinite;
+}
+
+/*
+@keyframes - Especifica o código de animação.
+transform: translateY() - translateY() reposiciona um elemento verticalmente no plano 2D.
+*/
+@keyframes float{
+	0%, 100%{
+		transform: translateY(0);
+	}
+	50%{
+		transform: translateY(-50px);
+	}
+}
+
+@media screen and (max-width: 1600px){
+	#video iframe{
+		width: 600px;
+		height: 330px;
+		margin-left: -16%;
+		border-radius: 25px;
+	}
+
+	#jcontainer{
+		margin-top: 8%;
+		margin-bottom: 5%;
+	}
+
+	#gifCDZ img{
+		width: 440px;
+		height: 410px;
+		margin-top: -6%;
+		margin-left: -14%;
+	}
+	
+	#caixa{
+		margin-top: -0.1%;
+		margin-left: -3%;
+	}
+}
+
+@media screen and (max-width: 1350px){
+	#video iframe{
+		margin: 0;
+		margin-top: 10%;
+		margin-bottom: 14%;
+		width: 675px;
+		height: 385px;
+		border-radius: 25px;
+	}
+
+	#gifCDZ{display: none;}
+	#caixa{display: none;}
+	
+	.gifs{
+		margin-bottom: 14%;
+	}
+	
+	.gifs2{
+		margin-top: 12%;
+	}
+	
+	.gifs img{
+		width: 220px;
+		height: 110px; 
+	}
+	
+	.gifs2 img{
+		width: 220px;
+		height: 110px; 
+	}
+}
+
+@media screen and (max-width: 505px){
+	#video iframe{
+		margin: 0;
+		margin-top: 15%;
+		margin-bottom: 10.1%;
+		width: 450px;
+		height: 280px;
+		border-radius: 25px;
+	}
+	
+	#gifCDZ{display: none;}
+	#caixa{display: none;}
+	
+	.gifs{
+		margin-top: 9%;
+		margin-bottom: 24%;
+	}
+	
+	.gifs2{
+		margin-top: 22%;
+	}
+	
+	.gifs img{
+		width: 110px;
+		height: 55px; 
+	}
+	
+	.gifs2 img{
+		width: 110px;
+		height: 55px; 
+	}
+	
+
+}

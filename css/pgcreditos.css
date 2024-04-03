@@ -1,0 +1,90 @@
+#container{
+    display: flex;
+	justify-content: center;
+}
+
+#card{
+	margin-top: 8%;
+	margin-bottom: 2%;
+	text-align: center;
+}
+
+#card img{
+	width: 550px;
+	height: 510px;
+}
+
+#pesquerdo{
+	margin-left: -10%;
+	font-family: Merriweather;
+	font-size: 18px;
+	color: white;
+	text-shadow: 0 0 20px #02C5EC, 0 -10px 20px #02C5EC, 
+               0 10px 20px #02C5EC, -20px 0 40px #02C5EC, 
+               20px 0 40px #02C5EC; 
+}
+
+#logo{
+	margin-top: 2%;
+	margin-left: -16%;
+	width: 350px;
+	height: 155px;
+}
+
+#pimg{
+	margin-top: 11%;
+}
+
+#pcenter{
+	margin-top: 8%;
+	font-family: Merriweather;
+	font-size: 22px;
+	color: #EFEB00         ;
+	/*line-height: 1.8em - Espaçamento entre linhas | em - Valor fixo expresso em pt, em*/
+	line-height: 1.8em;
+	letter-spacing: 2px;
+	text-shadow: 0 0 20px #00ADA5 , 0 -10px 20px #00ADA5 , 
+               0 10px 20px #00ADA5 , -20px 0 40px #00ADA5 , 
+               20px 0 40px #00ADA5 ; 
+}
+
+@media screen and (max-width: 1600px){
+	
+}
+
+@media screen and (max-width: 1350px){
+	#container{
+		margin-top: 10%;
+	}
+	
+	#pimg{
+		margin-left: 5%;
+	}
+	
+	#pcenter{
+		margin-top: 8%;
+		margin-bottom: 20%;
+	}
+	
+	#pimg{
+		text-align: center;
+	}
+
+@media screen and (max-width: 505px){
+	#container{
+		display: flex;
+		flex-direction: column;
+	}
+	
+	#card img{
+		width: 410px;
+		height: 400px;
+	}
+	
+	#pcenter{
+		font-size: 19px;
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+	
+}

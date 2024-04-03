@@ -1,0 +1,95 @@
+#corpo{
+	margin: 0;
+}
+
+body{
+    background-image: url("../imagens/fundo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+	margin: 0;
+}
+
+#imgintro{
+	margin-top: 3%;
+	margin-bottom: 2%;
+	text-align: center;
+}
+
+#imgintro img{
+	width: 400px;
+	height: 350px;
+}
+
+#pcenter{
+	color: #FFB800;
+	text-align: center;
+	font-family: Montserrat Alternates;
+	font-size: 18px;
+	text-shadow: 1px 1px 2px black;
+}
+
+.rodape{
+	background-color: rgba(0, 0, 0, .4); 
+	width: 100%;
+	margin-top: 6%;
+	height: 73px;
+	padding-top: 20px;
+	text-align: center;
+	font-family: cambria;
+	font-size: 14px;
+	color: #919F9F;        
+}
+
+/*Código PHP*/
+.login{
+	font-family: Arial black;
+	color: #027E8C;
+	text-decoration: none;
+}
+
+.login:hover{
+	color: white  ;
+}
+
+.msg{
+	font-family: Cambria Math black;
+	font-size: 18px;
+	/* -webkit - Alguns navegadores precisam do prefixo */
+	background: -webkit-linear-gradient(#eee, #333);
+	/*Apagar do fundo tudo que não estiver imediatamente atrás de texto */
+	-webkit-background-clip: text;
+	/*Apagar o texto, deixando apenas o fundo atrás dele */
+	-webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 1600px){
+	#imgintro{
+		margin-top: 8%;
+		margin-bottom: 3%;
+	}
+	
+}
+
+@media (max-width: 1024px){
+	#imgintro{
+		margin-top: 16%;
+		margin-bottom: 4%;
+	}
+	
+	#pcenter{
+		margin-bottom: 18%;
+	}
+	
+}
+
+@media (max-width: 505px){
+	#imgintro{
+		margin-top: 13%;
+		margin-bottom: 5%;
+	}
+	
+	#pcenter{
+		margin-bottom: 10%;
+	}
+	
+}

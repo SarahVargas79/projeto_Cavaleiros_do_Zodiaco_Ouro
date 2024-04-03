@@ -1,0 +1,138 @@
+fieldset{
+	border: 0;
+	text-align: center;
+	font-family: Roboto;
+	font-size: 18px;
+}
+
+.dados{
+	margin-top: 3%;
+	margin-bottom: 15px;
+	
+}
+
+.dados label{
+	display: block;
+	margin-bottom: 5px;
+	color: white;
+	letter-spacing: 1px;
+}
+
+.dados input[type="email"],
+.dados input[type="password"]{
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	padding: 3px;
+}
+
+.dados input[type="email"],
+.dados input[type="password"]{
+	width: 225px;
+}
+
+/*outline- Retirar a formatção padrão do navegador*/
+.dados input:focus{
+	border: #000D7F 2px solid;
+	outline: none;
+}
+
+.dados input:hover{
+	border: #000D7F 2px solid;
+}
+
+/*text-shadow - Sombreamento no texto*/
+.botao{
+	margin-top: 6%;
+	width: 225px;
+	padding: 5px 7px;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	background-color: #007A76;
+	color: white;
+}
+
+.botao:hover{
+	background-color: #34ABE3;
+}
+
+.botao, select{
+	cursor: pointer;
+}
+
+h1{
+	margin-bottom: 5.5%;
+	color: #007A76;
+	letter-spacing: 2px;
+	text-shadow: 2px 2px 2px black;
+}
+
+::after,
+::before{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+#container{
+	display: flex;
+	width: 100%;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
+}
+
+#box{
+	position: relative;
+	width: 350px;
+	height: 355px;
+	padding-top: 2%;
+	background-image: linear-gradient(205deg, #725412 0, #694801 50%, #613d00 100%);
+	border-radius: 30px;
+	display: block;
+	justify-content: center;
+	overflow: hidden;
+}
+
+#box::before{
+	content: "";
+	position: absolute;
+	margin-top: -60%;
+	margin-left: -28%;
+	width: 150px;
+	height: 200%;
+	background-image: linear-gradient(270deg, #00007b 0, #00007b 50%, #00007b 100%);
+	animation: animate 3s linear infinite;
+}
+
+@keyframes animate{
+	100%{
+		transform: rotate(360deg);
+	}
+}
+
+#box::after{
+	content: "";
+	position: absolute;
+	background-image: linear-gradient(205deg, #725412 0, #694801 50%, #613d00 100%);
+	inset: 5px; top, bottom, left e right;
+	border-radius: inherit;
+}
+
+#box h1, .bloco, button{
+	position: relative;
+	z-index: 1;
+}
+
+@media screen and (max-width: 1024px){
+	#box{
+		padding-top: 4.1%;
+	}
+	
+}
+
+@media screen and (max-width: 505px){
+	#box{
+		padding-top: 8%;
+	}
+}

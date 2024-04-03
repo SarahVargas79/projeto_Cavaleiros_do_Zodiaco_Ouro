@@ -1,0 +1,251 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+#myTopnav img{
+	margin-top: 4px;
+	margin-left: 28%;
+	width: 200px;
+	height: 86px;
+}
+
+.topnav{
+	padding-left: 0.5%;
+	overflow: hidden;
+	background: linear-gradient(180deg, #60480A 0%, #956200 78.65%);
+	font-family: Cambria Math;
+}
+
+/*Estilize os links dentro da barra de navegação
+topnav a - define o link's do menu
+display propriedade especifica o comportamento de exibição
+display: block;
+*/
+.topnav a{
+	display: block;
+	padding: 35px 20px;
+	float: left;
+	text-transform: capitalize;
+	text-decoration: none;
+	font-size: 19px;
+	color: #026773;
+	text-align: center;
+	text-shadow: 1px 1px 2px black;
+	font-family: Montserrat Alternates;
+}
+
+/*Ocultar o link que deve abrir e fechar o 
+topnav em telas pequenas  
+display: none; - oculta o &#9776;
+*/
+.topnav .icon{
+	display: none;
+}
+
+/*Contêiner suspenso - necessário para posicionar 
+o conteúdo suspenso  
+float: left; define o alinhamento do menu na div do sub
+overflow: hidden;
+*/
+.dropdown{
+	float: left;
+}
+
+/*Estilize o botão suspenso para caber dentro do topnav  
+Define no botão do sub
+outline: none; Defina um contorno em torno de um element
+background-color: inherit; - está herdando o valor da cor do elemento mais próximo, 
+  font-family: inherit; - está herdando o valor da cor do elemento mais próximo, 
+*/
+.dropdown .dropbtn{
+	margin: 0;
+	padding: 35px 20px;
+	border: none;
+	background-color: inherit;
+	font-family: Montserrat Alternates;
+	font-size: 19px;    
+	outline: none;
+	color: #FFB800;
+	text-shadow: 1px 1px 2px black;
+}
+
+/*
+Estilo do conteúdo suspenso (oculto por padrão) 
+display: none; - oculta o sub
+position: absolute; - define a posição absoluta para não
+modificar o layout
+min-width: 120px; define o tamanho mínimo do sub
+  box-shadow: 10px (direita) 18px(superior) 26px(opacidade) 
+  10px(total) rgba(0,0,0,0.2);
+  z-index: 1; - propriedade especifica a ordem da pilha de um elemento.
+*/
+.dropdownsub{
+	display: none;
+	margin-top: 1.5px;
+	margin-left: 2%;
+	position: absolute;
+	background-color: #AF7402;
+	min-width: 120px;
+}
+
+/*Estilize os links dentro da lista suspensa 
+Definindo as configurações no link do sub
+display: block; define o sub em layout de bloco
+*/
+.dropdownsub a{
+	display: block;
+	padding: 10px 16px;
+	border-bottom: solid 1px white;
+	float: none;
+	font-size: 18px;
+	color: #FFB800;
+	text-decoration: none;
+	text-align: left;
+}
+
+/*Adicione um fundo escuro nos links do navegador principal 
+e o botão suspenso ao passar o mouse
+Define configurações quando passar o muse sobre o menu principal, 
+demais menus (pagina 2 a 6) e botão responsivo
+.dropbtn
+*/
+.topnav a:hover, .dropdown:hover {
+	color: white;
+}
+
+/* 
+Adicione um plano de fundo cinza aos links suspensos ao 
+passar o mouse
+Define configurações quando passar o muse sobre o sub
+*/
+.dropdownsub a:hover{
+	background-color: #744E06;
+}
+
+/*
+Mostrar o menu suspenso quando o usuário move o 
+mouse sobre o botão suspenso
+Para mostrar o submenu
+*/
+.dropdown:hover .dropdownsub{
+	display: block;
+}
+
+@media (max-width: 1600px){
+	#myTopnav img{
+		margin-left: 0.1%;
+	}
+	
+}
+
+@media screen and (max-width: 1350px) {
+	.topnav a:not(:first-child), .dropdown .dropbtn{
+		display: none;
+	}
+	/* Configuração do icone
+	float: right; - define o icone a direita
+	display: block; - define que o layout do icone em bloco*/
+	.topnav a.icon{
+		float: right;
+		display: block;
+	}
+	/*position: relative; - O position relative posiciona o 
+	elemento em relação a si mesmo. Ou seja, o ponto zero 
+	será o canto superior esquerdo, e ele começará a 
+	contar a partir dali. 
+	Para alinhar o icone*/
+	.topnav.responsive{
+		position: relative;
+	}
+	/*o elemento com Position Absolute se utiliza do 
+	ponto superior esquerdo de outros elementos. 
+	Define que o icone fique na posição		  */
+	.topnav.responsive .icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	/*define as configurações do layout do menu e sub
+	float propriedade especifica como um elemento deve flutuar.   
+	  float: none; O elemento não flutua (será exibido exatamente 
+	  onde ocorre no texto). Isso é o padrão*/
+	  .topnav.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	/*formatação do layout do menu principal do sub (pagina 3 e 4) */
+	.topnav.responsive .dropdown{
+		float: none;
+	}
+	/*formatação do layout do sub  */
+	.topnav.responsive .dropdownsub{
+		position: relative;
+	}
+	/*formatação do layout do menu principal do sub (pagina 3 e 4) */
+	.topnav.responsive .dropdown .dropbtn{
+		display: block;
+		width: 100%;
+		text-align: left;
+	}  
+}
+
+@media screen and (max-width: 800px) {
+	.topnav a:not(:first-child), .dropdown .dropbtn{
+		display: none;
+	}
+	/* Configuração do icone
+	float: right; - define o icone a direita
+	display: block; - define que o layout do icone em bloco*/
+	.topnav a.icon{
+		float: right;
+		display: block;
+	}
+	/*position: relative; - O position relative posiciona o 
+	elemento em relação a si mesmo. Ou seja, o ponto zero 
+	será o canto superior esquerdo, e ele começará a 
+	contar a partir dali. 
+	Para alinhar o icone*/
+	.topnav.responsive{
+		position: relative;
+	}
+	/*o elemento com Position Absolute se utiliza do 
+	ponto superior esquerdo de outros elementos. 
+	Define que o icone fique na posição		  */
+	.topnav.responsive .icon{
+		position: absolute;
+		right: 0;
+		top: 0;
+	}
+	/*define as configurações do layout do menu e sub
+	float propriedade especifica como um elemento deve flutuar.   
+	  float: none; O elemento não flutua (será exibido exatamente 
+	  onde ocorre no texto). Isso é o padrão*/
+	  .topnav.responsive a{
+		float: none;
+		display: block;
+		text-align: left;
+	}
+	/*formatação do layout do menu principal do sub (pagina 3 e 4) */
+	.topnav.responsive .dropdown{
+		float: none;
+	}
+	/*formatação do layout do sub  */
+	.topnav.responsive .dropdownsub{
+		position: relative;
+	}
+	/*formatação do layout do menu principal do sub (pagina 3 e 4) */
+	.topnav.responsive .dropdown .dropbtn{
+		display: block;
+		width: 100%;
+		text-align: left;
+	}  
+}
+
+
+
+
+
+
